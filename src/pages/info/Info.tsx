@@ -1,7 +1,7 @@
 export const Info = () => {
   return (
     <div>
-      Info Page.
+      Info Page. this is a change.
     </div>
   )
 }

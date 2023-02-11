@@ -1,3 +1,4 @@
+import { Info } from "../../pages/info/Info";
 import { Aside } from "./aside/Aside";
 import { MainBox } from "./styles";
 
@@ -6,6 +7,7 @@ export const Main = () => {
     <>
       <MainBox>
         <Aside />
+        <Info />
       </MainBox>
     </>
   );

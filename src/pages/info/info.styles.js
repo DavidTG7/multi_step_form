@@ -1,17 +1,5 @@
 import styled from "styled-components";
 
-export const InfoHeading = styled.h1`
-  font-size: 3.4rem;
-  color: var(--marine-blue);
-`;
-
-export const InfoText = styled.p`
-  color: var(--cool-gray);
-  font-size: 1.6rem;
-  margin: 1rem 0 2rem 0;
-
-`;
-
 export const InfoLabel = styled.label`
   width: 100%;
   font-size: 1.4rem;

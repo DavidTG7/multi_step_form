@@ -7,3 +7,15 @@ export const PageContainerBox = styled.div`
   padding: 4rem 7rem;
   width: 45rem;
 `;
+
+export const InfoHeading = styled.h1`
+  font-size: 3.4rem;
+  color: var(--marine-blue);
+`;
+
+export const InfoText = styled.p`
+  color: var(--cool-gray);
+  font-size: 1.6rem;
+  margin: 1rem 0 2rem 0;
+
+`;

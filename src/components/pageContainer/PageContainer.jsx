@@ -1,5 +1,17 @@
-import { PageContainerBox } from "./pageContainer";
+import { GoBackButton } from "../goBackButton/GoBackButton";
+import { NextStepButton } from "../nextStepButton/NextStepButton";
+import { InfoHeading, InfoText, PageContainerBox } from "./pageContainer";
 
-export const PageContainer = ({children}) => {
-  return <PageContainerBox>{children}</PageContainerBox>;
+export const PageContainer = ({ children, title, infoText, goBackButton, nextButton }) => {
+  return (
+    <PageContainerBox>
+      <InfoHeading>{title}</InfoHeading>
+      <InfoText>
+        {infoText}
+      </InfoText>
+      {children}
+      {goBackButton && <GoBackButton />}
+      {nextButton && <NextStepButton />}
+    </PageContainerBox>
+  );
 };

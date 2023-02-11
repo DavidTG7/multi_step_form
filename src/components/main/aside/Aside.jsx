@@ -23,7 +23,7 @@ const itemsList = [
 
 const allItems = itemsList.map(({number, infoType}) => {
   return(
-    <ItemStep number={number} infoType={infoType} />
+    <ItemStep key={number} number={number} infoType={infoType} />
   )
 })
 

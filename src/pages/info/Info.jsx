@@ -7,6 +7,7 @@ export const Info = () => {
       title="Personal Info"
       infoText="Please provide your name, email address, and phone number."
       nextButton
+      goBackButton
     >
       <InfoLabel>
         Name

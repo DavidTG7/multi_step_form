@@ -18,4 +18,9 @@ export const NextButton = styled.button`
   &:hover {
     background-color: var(--marine-blue-hover);
   }
+
+  @media screen and (max-width: 800px) {
+   bottom: -16rem;
+   right: 0;
+  }
 `;

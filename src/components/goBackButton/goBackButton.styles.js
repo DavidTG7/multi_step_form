@@ -12,4 +12,9 @@ export const GoBackBackAnchor = styled.a`
   &:hover {
     color: var(--marine-blue);
   }
+
+  @media screen and (max-width: 800px) {
+   bottom: -14.5rem;
+   left: 0;
+  }
 `

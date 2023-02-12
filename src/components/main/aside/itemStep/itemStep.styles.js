@@ -19,12 +19,21 @@ export const NumberStep = styled.p`
   aspect-ratio: 1;
   margin: 0;
   color: ${({isActive}) => isActive ? "var(--marine-blue)" : "var(--alabaster)"};
+
+  @media screen and (max-width: 800px) {
+    width: 5rem;
+    font-size: 2rem;
+  }
 `;
 
 export const StepInfoBox = styled.div`
   display: flex;
   flex-flow: column;
   gap: .4rem;
+
+  @media screen and (max-width: 800px) {
+    display: none;
+  }
 `;
 
 export const ActualStep = styled.h2`

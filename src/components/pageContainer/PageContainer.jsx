@@ -1,6 +1,6 @@
 import { GoBackButton } from "../goBackButton/GoBackButton";
 import { NextStepButton } from "../nextStepButton/NextStepButton";
-import { InfoHeading, InfoText, PageContainerBox } from "./pageContainer";
+import { InfoHeading, InfoText, PageContainerBox } from "./pageContainer.styles";
 
 export const PageContainer = ({ children, title, infoText, goBackButton, nextButton }) => {
   return (

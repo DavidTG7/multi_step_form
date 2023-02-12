@@ -1,39 +1,44 @@
 import bgDesktop from "../../../images/bg-sidebar-desktop.svg";
-import { AsideBGImage, AsideBox, ItemsContainer } from "./aside.styles";
+import bgMobil from "../../../images/bg-sidebar-mobile.svg";
+import {
+  AsideBGImageDesk,
+  AsideBGImageMobil,
+  AsideBox,
+  ItemsContainer,
+} from "./aside.styles";
 import { ItemStep } from "./itemStep/ItemStep";
 
 const itemsList = [
   {
     number: 1,
-    infoType: "YOUR INFO"
+    infoType: "YOUR INFO",
   },
   {
     number: 2,
-    infoType: "SLECT PLAN"
+    infoType: "SLECT PLAN",
   },
   {
     number: 3,
-    infoType: "ADD-ONS"
+    infoType: "ADD-ONS",
   },
   {
     number: 4,
-    infoType: "SUMMARY"
+    infoType: "SUMMARY",
   },
-]
+];
 
-const allItems = itemsList.map(({number, infoType}) => {
-  return(
-    <ItemStep number={number} infoType={infoType} />
-  )
-})
+const allItems = itemsList.map(({ number, infoType }) => {
+  return <ItemStep number={number} infoType={infoType} />;
+});
 
 export const Aside = () => {
-  return(
-    <AsideBox>
-      <AsideBGImage src={bgDesktop} alt="Backgroun Image" />
-      <ItemsContainer>
-        {allItems}
-      </ItemsContainer>
-    </AsideBox>
+  return (
+    <>
+      <AsideBGImageMobil src={bgMobil} alt="Backgroun Image" />
+      <AsideBox>
+        <AsideBGImageDesk src={bgDesktop} alt="Backgroun Image" />
+        <ItemsContainer>{allItems}</ItemsContainer>
+      </AsideBox>
+    </>
   );
 };

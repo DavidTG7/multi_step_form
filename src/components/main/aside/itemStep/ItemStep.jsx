@@ -1,4 +1,4 @@
-import { ActualStep, ItemStepBox, NumberStep, StepInfoBox, StepInfoType } from "./itemStep";
+import { ActualStep, ItemStepBox, NumberStep, StepInfoBox, StepInfoType } from "./itemStep.styles";
 
 export const ItemStep = ({number, infoType}) => {
   return(

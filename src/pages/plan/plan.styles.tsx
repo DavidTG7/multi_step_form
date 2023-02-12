@@ -16,16 +16,20 @@ export const PlanStyle = style.section<PlanStyleProps>`
     display:grid;
     gap: .6rem;
   }
+
   .plan-duration {
     display:flex;
-    justify-content: space-evenly;
+    justify-content: center;
     align-items: center;
-    padding: 16px;
+    padding: 16px 0;
     background-color: var(--alabaster);
     border-radius: 5px;
     border: 1px solid var(--magnolia);
     
-    p { font-weight: bold;}
+    p { 
+      font-weight: bold;
+      margin: 0 1rem;
+    }
     ${props => !props.isActive ? 
       'p:first-child{ color: var( --marine-blue) }':
        'p:last-child{ color: var( --marine-blue) }'
@@ -51,6 +55,25 @@ export const PlanStyle = style.section<PlanStyleProps>`
       background-color: var(--white);
       transform: translate(0, -50%);
       
+    }
+  }
+  
+  @media (min-width: 560px) {
+    max-width: 500px;
+    gap: 2.5rem;
+    .plan-type-container  {
+      grid-template-columns: repeat(3, 155px);
+    }
+    .plantype-description-container{
+      flex-direction: column;
+      .plantype-description {
+        margin-top: 3rem;
+        margin-left: 0;
+      }
+      img {
+        width: 40px;
+        height: 40px;
+      }
     }
   }
 `;

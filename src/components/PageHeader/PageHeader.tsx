@@ -1,8 +1,8 @@
 import PageHeaderStyle from './PageHeader.style'
 
 interface props {
-    title: string,
-    text: string,
+  title: string,
+  text: string,
 }
 const PageHeader = ({title, text}:props) => {
   return (

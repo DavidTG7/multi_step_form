@@ -25,7 +25,7 @@ export const PlanContainer = styled.div`
   display:grid;
   gap: 1.6rem;
   @media (min-width: 800px) {
-    grid-template-columns: repeat(3, 135px);
+    grid-template-columns: repeat(3, 138px);
   }
 `
 export const PlanDurationStyle = styled.div<PlanStyleProps>`

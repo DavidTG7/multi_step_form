@@ -1,4 +1,3 @@
-import { useState } from 'react'
 import { PlanTypeStyle  } from "./PlanTpe.style"
 
 interface props {
@@ -22,7 +21,7 @@ export const PlanType = ({value, name, icon, setPlanSelected, planSelected, isAc
         <img src={icon} alt="" />
         <div className="plantype-description">
           <p>{name}</p>
-          <span>${value}/mo</span>
+          <span>${value}/{!isActive? 'mo': 'yr'}</span>
           <small>2 moths free</small>
         </div>
       </div>

@@ -11,6 +11,12 @@ export const PlanTypeStyle = style.section<PlanTypeStyleProps>`
     border-radius: 10px;
     border: 1px solid ${(props) => props.selected? 'var(--marine-blue)' : 'var(--cool-gray)'};
     cursor: pointer;
+    
+
+    &:hover {
+        border: 1px solid var(--marine-blue);
+    }
+
     .plantype-description-container {
         display: flex;
         img {
@@ -23,18 +29,33 @@ export const PlanTypeStyle = style.section<PlanTypeStyleProps>`
         margin-left: .8rem;
         
         p {
-            color: var(--marine-blue);
+            font-size: 1.8rem;
             font-weight: bold;
+            color: var(--marine-blue);
         }
         span {
             color: var(--cool-gray);
-            font-size: 15px;
+            font-size: 1.5rem;
         }
         small {
+            font-size: 1.5rem;
             display: ${(props) => props.isActive? 'block' : 'none'};
             color: var(--marine-blue);
-            font-weight: bold;
-            
+            font-weight: 500;
+        }
+    }
+    @media (min-width: 800px) {
+        .plantype-description-container{
+            flex-direction: column;
+            gap:1rem;
+            .plantype-description {
+              margin-top: 3rem;
+              margin-left: 0;
+            }
+            img {
+              width: 40px;
+              height: 40px;
+            }
         }
     }
 `

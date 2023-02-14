@@ -6,7 +6,7 @@ export const PageContainerBox = styled.div`
   display: flex;
   flex-flow: column;
   padding: 4rem 7rem;
-  width: 45rem;
+  width: 60rem;
 
   @media screen and (max-width: 800px) {
     width: 90%;

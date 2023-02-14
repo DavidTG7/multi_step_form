@@ -10,7 +10,8 @@ export const Main = () => {
       <MainBox>
         <Aside />
         {/* <Info /> */}
-        <Plan/>
+        {/* <Plan/> */}
+        <Summary />
       </MainBox>
     </>
   );

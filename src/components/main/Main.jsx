@@ -1,7 +1,10 @@
 import { Info } from "../../pages/info/Info";
 import { Aside } from "./aside/Aside";
 import { MainBox } from "./main.styles";
-import { Summary } from '../../pages/summary/Sumary'
+import { Summary } from '../../pages/summary/Sumary';
+import { AddOns } from "../../pages/addOns/AddOns";
+
+
 import {Plan}  from '../../pages/plan/Plan'
 
 export const Main = () => {
@@ -11,7 +14,8 @@ export const Main = () => {
         <Aside />
         {/* <Info /> */}
         {/* <Plan/> */}
-        <Summary />
+        {/* <Summary /> */}
+        <AddOns />
       </MainBox>
     </>
   );

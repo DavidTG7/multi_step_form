@@ -10,7 +10,6 @@ interface props {
 }
 
 export const PlanType = ({value, name, icon, setPlanSelected, planSelected, isActive}: props) => {
-
   const handleSelect = () => {
     setPlanSelected(name)
   }

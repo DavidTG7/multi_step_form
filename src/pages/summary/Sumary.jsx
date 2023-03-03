@@ -1,17 +1,22 @@
-import PageHeader from '../../components/PageHeader/PageHeader'
 import { PageContainer } from "../../components/pageContainer/PageContainer";
-import {SummaryStyle, SummaryBox, SummaryBoxTop, SummaryBoxBottom, SummaryResult, SummaryGrayText, SummaryValue, SummaryBoxBottomItem, SummaryBoxTopPlan, SummaryFinalPrice} from './Summary,styles'
+import {
+  SummaryStyle,
+  SummaryBox,
+  SummaryBoxTop,
+  SummaryBoxBottom,
+  SummaryResult,
+  SummaryGrayText,
+  SummaryValue,
+  SummaryBoxBottomItem,
+  SummaryBoxTopPlan,
+  SummaryFinalPrice,
+} from "./Summary.styles";
 
-interface props {
-  name?: string,
-  type?: string,
-  value?: number
-}
-export const Summary = ({ name='Arcade', type='Monthly', value=9 }:props) => {
-  return(
+export const Summary = ({ name = "Arcade", type = "Monthly", value = 9 }) => {
+  return (
     <PageContainer
-      title='Finishing up'
-      infoText='Double-check everything looks OK before confirming.'
+      title="Finishing up"
+      infoText="Double-check everything looks OK before confirming."
       nextButton
       goBackButton
     >
@@ -19,7 +24,9 @@ export const Summary = ({ name='Arcade', type='Monthly', value=9 }:props) => {
         <SummaryBox>
           <SummaryBoxTop>
             <SummaryBoxTopPlan>
-              <strong>{name} ({type})</strong>
+              <strong>
+                {name} ({type})
+              </strong>
               <a href="#">Change</a>
             </SummaryBoxTopPlan>
             <SummaryValue strong>${value}/mo</SummaryValue>
@@ -41,5 +48,5 @@ export const Summary = ({ name='Arcade', type='Monthly', value=9 }:props) => {
         </SummaryResult>
       </SummaryStyle>
     </PageContainer>
-  )
-}
+  );
+};

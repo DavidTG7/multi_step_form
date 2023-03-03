@@ -1,12 +1,12 @@
 import styled from 'styled-components'
 
-interface PlanStyleProps {
-  isActive: boolean,
-}
-interface PlanDurationProps {
-  isActive: boolean,
-  handleClick: ()=>void
-}
+// interface PlanStyleProps {
+//   isActive: boolean,
+// }
+// interface PlanDurationProps {
+//   isActive: boolean,
+//   handleClick: ()=>void
+// }
 
 export const PlanStyle = styled.section`
   display: grid;
@@ -28,7 +28,7 @@ export const PlanContainer = styled.div`
     grid-template-columns: repeat(3, 138px);
   }
 `
-export const PlanDurationStyle = styled.div<PlanStyleProps>`
+export const PlanDurationStyle = styled.div`
   display:flex;
   justify-content: center;
   align-items: center;
@@ -71,7 +71,7 @@ export const PlanDurationStyle = styled.div<PlanStyleProps>`
   }
 `
 
-export const PlanDuration = ({isActive, handleClick}:PlanDurationProps) => {
+export const PlanDuration = ({isActive, handleClick}) => {
   
   return (
     <PlanDurationStyle isActive={isActive}>

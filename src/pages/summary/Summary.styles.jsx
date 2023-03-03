@@ -1,10 +1,5 @@
 import styled from 'styled-components'
 
-interface SummaryStyleProps {
-  strong: boolean
-}
-
-
 export const SummaryStyle = styled.div`
   display: grid;
   gap: 1.4rem;
@@ -52,7 +47,7 @@ export const SummaryBoxTopPlan = styled.div`
 
   }
 `
-export const SummaryValue = styled.p<SummaryStyleProps>`
+export const SummaryValue = styled.p`
   font-size: 1.6rem;
   color: var(--marine-blue);
   ${(props)=>props.strong? 'font-weight:600;':''}

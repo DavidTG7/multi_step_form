@@ -1,7 +1,7 @@
 import { PageContainer } from "../../components/pageContainer/PageContainer";
 import { useState } from 'react';
-import { PlanStyle, PlanContainer, PlanDuration } from './plan.styles.js'
-import { PlanType } from '../../components/PlanType/PlanType.js'
+import { PlanStyle, PlanContainer, PlanDuration } from './Plan.styles.jsx'
+import { PlanType } from '../../components/PlanType/PlanType'
 import arcadeIcon from '../../images/icon-arcade.svg'
 import advancedIcon from '../../images/icon-advanced.svg'
 import proIcon from '../../images/icon-pro.svg'
